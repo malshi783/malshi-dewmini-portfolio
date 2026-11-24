@@ -1,21 +1,18 @@
-node_modules/
+﻿node_modules/
 dist/
-.DS_Store
-*.local
-
 .env
 .env.*
 !.env.example
-
+*.local
+.DS_Store
 public/video/
 
-*.pem
-*.key
-
-# Private employee screenshots - exclude until sanitized
+# Private employee screenshots
+public/projets screenshots/EmployeeManagementSystem/
 public/assets/admin screenshots/
 public/assets/employee scrennshots/
 public/assets/projects/employee-management/
 
-# Employee screenshots - exclude until anonymized
-public/projets screenshots/EmployeeManagementSystem/
+# Sensitive files
+*.pem
+*.key

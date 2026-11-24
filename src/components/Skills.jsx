@@ -1,40 +1,188 @@
 import { motion } from 'framer-motion'
-import { Bot, Code2, Database, GitBranch, Laptop, Send, Workflow } from 'lucide-react'
+
+import {
+  Bot,
+  Code2,
+  Database,
+  GitBranch,
+  Laptop,
+  Send,
+  ShieldCheck,
+  TestTube2,
+  Workflow,
+} from 'lucide-react'
+
 import { SectionHeading } from './SectionHeading'
 
 const groups = [
-  { icon: Code2, title: 'Programming Languages & Frameworks', items: ['Java', 'Spring Boot', 'React.js', 'JavaScript', 'Python', 'Dart', 'Flutter', 'HTML', 'CSS'] },
-  { icon: Laptop, title: 'Development Environments', items: ['Visual Studio Code', 'IntelliJ IDEA', 'Android Studio'] },
-  { icon: Send, title: 'API Development & Testing', items: ['Postman'] },
-  { icon: GitBranch, title: 'Version Control', items: ['Git', 'GitHub'] },
-  { icon: Database, title: 'Database Tools', items: ['MySQL', 'MySQL Workbench', 'PostgreSQL'] },
-  { icon: Bot, title: 'AI & Agentic Development', status: 'Exploring', items: ['AI-assisted coding', 'Agentic workflows', 'Human-AI collaboration', 'Workflow automation'] },
-  { icon: Workflow, title: 'Software Practices', items: ['Software QA', 'Docker'] },
+  {
+    icon: Code2,
+    title: 'Programming Languages',
+    items: [
+      'Java',
+      'JavaScript',
+      'Dart',
+      'SQL',
+      'HTML',
+      'CSS',
+    ],
+  },
+
+  {
+    icon: Laptop,
+    title: 'Frameworks & Runtime',
+    items: [
+      'Spring Boot',
+      'React.js',
+      'Node.js',
+      'Express.js',
+      'Flutter',
+    ],
+  },
+
+  {
+    icon: Send,
+    title: 'API Development & Testing',
+    items: [
+      'REST API Development',
+      'API Integration',
+      'Postman',
+      'Swagger / OpenAPI',
+    ],
+  },
+
+  {
+    icon: Database,
+    title: 'Database Technologies',
+    items: [
+      'MySQL',
+      'PostgreSQL',
+      'Relational Database Concepts',
+      'Database Design',
+    ],
+  },
+
+  {
+    icon: Laptop,
+    title: 'Development Tools',
+    items: [
+      'Visual Studio Code',
+      'IntelliJ IDEA',
+      'Android Studio',
+      'MySQL Workbench',
+    ],
+  },
+
+  {
+    icon: GitBranch,
+    title: 'Version Control & Collaboration',
+    items: [
+      'Git',
+      'GitHub',
+      'Branch Management',
+      'Collaborative Development',
+    ],
+  },
+
+  {
+    icon: ShieldCheck,
+    title: 'Software Engineering',
+    items: [
+      'Object-Oriented Programming',
+      'CRUD Operations',
+      'JWT Authentication',
+      'Role-Based Access Control',
+      'Frontend–Backend Integration',
+    ],
+  },
+
+  {
+    icon: TestTube2,
+    title: 'Software Testing & Quality',
+    items: [
+      'API Testing',
+      'Software Testing Fundamentals',
+      'Debugging',
+      'Application Validation',
+    ],
+  },
+
+  {
+    icon: Workflow,
+    title: 'Generative AI & Agentic AI',
+    status: 'Currently Exploring',
+    items: [
+      'Generative AI Concepts',
+      'Agentic AI Concepts',
+      'AI-Assisted Development',
+      'AI-Assisted Quality Engineering',
+      'Intelligent Workflow Automation',
+    ],
+  },
 ]
 
 export function Skills() {
   return (
     <section id="skills" className="section skills-section">
+
       <div className="container">
-        <SectionHeading eyebrow="02 / Technical Skills" title="Tools I work with." description="A practical stack focused on full-stack development, backend systems and software quality." />
+
+        <SectionHeading
+          eyebrow="02 / Technical Skills"
+          title="Technologies & tools."
+          description="Technologies, development tools and software engineering practices I have explored through academic projects and practical learning, alongside emerging areas I am currently exploring."
+        />
+
         <div className="skills-grid">
+
           {groups.map(({ icon: Icon, title, status, items }, index) => (
+
             <motion.article
               className="skill-card"
               key={title}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.25 }}
-              transition={{ delay: index * 0.08 }}
+              transition={{
+                duration: 0.45,
+                delay: index * 0.06,
+              }}
             >
-              <div className="skill-card-top"><Icon size={21} /><span>0{index + 1}</span></div>
+
+              <div className="skill-card-top">
+
+                <Icon size={21} />
+
+                <span>
+                  {String(index + 1).padStart(2, '0')}
+                </span>
+
+              </div>
+
               <h3>{title}</h3>
-              {status && <p className="skill-status">{status}</p>}
-              <ul>{items.map((item) => <li key={item}>{item}</li>)}</ul>
+
+              {status && (
+                <p className="skill-status">
+                  {status}
+                </p>
+              )}
+
+              <ul>
+                {items.map((item) => (
+                  <li key={item}>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+
             </motion.article>
+
           ))}
+
         </div>
+
       </div>
+
     </section>
   )
 }

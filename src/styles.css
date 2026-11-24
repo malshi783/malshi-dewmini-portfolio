@@ -1255,18 +1255,43 @@ body.showcase-open { overflow: hidden; }
   background: #000;
   border: 1px solid #26352f;
 }
-.hero-greeting{
-  display:inline-block;
-  color:#00e89a;
-  font-size:clamp(16px, 2vw, 20px);
-  font-weight:600;
-  margin-bottom:12px;
+/* Hero Greeting */
+
+.hero-greeting {
+  display: inline-block;
+  color: var(--green);
+  font-size: clamp(16px, 2vw, 20px);
+  font-weight: 600;
+  margin-bottom: 12px;
   animation: fadeIn 0.7s ease-in-out;
   letter-spacing: -0.01em;
 }
-@media(max-width:760px){
-  .hero-greeting{
-    font-size:clamp(14px, 2vw, 18px);
-    margin-bottom:10px;
+
+@media (max-width: 760px) {
+  .hero-greeting {
+    font-size: clamp(14px, 2vw, 18px);
+    margin-bottom: 10px;
   }
+}
+
+/* Project Type Badge */
+
+.project-type {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 12px;
+  border: 1px solid rgba(77, 235, 170, 0.28);
+  border-radius: 30px;
+  background: rgba(77, 235, 170, 0.06);
+  color: #4debaa;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.project-type:hover {
+  background: rgba(77, 235, 170, 0.12);
+  border-color: #4debaa;
 }

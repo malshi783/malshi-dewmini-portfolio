@@ -28,11 +28,16 @@ export function Hero() {
           <h1 className="hero-name">MALSHI<br /><span>DEWMINI.</span></h1>
           <p className="hero-headline">Exploring AI Agents, Intelligent Workflows<br /><span>&amp; Business Innovation.</span></p>
           <p className="hero-intro">
-            I am a Software Engineering undergraduate at NSBM Green University, Sri Lanka, passionate about
-            technology, innovation and solving real-world problems.
+              I am a third-year Software Engineering undergraduate at
+            NSBM Green University, Sri Lanka, passionate about
+            technology, innovation and building meaningful digital
+            solutions.
+.
             <br /><br />
-            I work with AI-powered coding agents and explore how technology, automation and collaboration
-            can turn ideas into practical digital solutions.
+               Through individual and team-based projects, I have gained
+            practical experience in software development and explored
+            technologies such as Java, Spring Boot, React.js, Node.js
+            and Flutter.
           </p>
           <div className="hero-actions">
             <a className="button button-primary" href="/Malshi_Dewmini_CV.pdf" download>

@@ -65,15 +65,23 @@ const learningEntries = [
   {
     course: 'Business Analysis Basics',
     provider: 'Simplilearn SkillUp',
-    completed: '2 November 2026',
+    completed: ' 2026',
     verificationUrl: '/certificates/1793593676033.pdf',
     learnings: 'Business analysis fundamentals, business requirements and core business analysis concepts.',
   },
   {
     course: 'Introduction to Software Testing',
     provider: 'Simplilearn SkillUp',
-    completed: '18 November 2026',
+    completed: ' 2026',
     verificationUrl: '/certificates/1795018984297.pdf',
+    learnings: 'Software testing fundamentals, testing types and techniques, and software quality concepts.',
+  },
+  {
+    course: 'Transforming Project Management with AI Agents',
+
+    provider: 'LinkedIn Learning',
+    completed: ' 2026',
+    verificationUrl: '/certificates/public/certificates/CertificateOfCompletion_Transforming Project Management with AI Agents.pdf',
     learnings: 'Software testing fundamentals, testing types and techniques, and software quality concepts.',
   },
 ]
