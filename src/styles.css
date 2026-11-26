@@ -1466,11 +1466,11 @@ body.showcase-open { overflow: hidden; }
   }
 
   .code-card {
-    top: 15px;
-    right: 12px;
+    top: 16px;
+    right: 10px;
     bottom: auto;
-    padding: 10px 12px;
-    font-size: 10px;
+    padding: 9px 11px;
+    font-size: 8px;
   }
 
   .project-visual {
