@@ -1484,4 +1484,8 @@ body.showcase-open { overflow: hidden; }
   .project-demo-player {
     border-radius: 8px;
   }
+  /* Hide decorative code badge on all screen sizes */
+.hero-visual .code-card {
+  display: none !important;
+}
 }
