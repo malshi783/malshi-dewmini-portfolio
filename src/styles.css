@@ -1386,12 +1386,16 @@ body.showcase-open { overflow: hidden; }
     height: 420px;
   }
 
+  
   .code-card {
-    top: 20px;
-    right: 12px;
+    top: 16px;
+    right: 10px;
     bottom: auto;
-    z-index: 5;
+    padding: 9px 11px;
+    font-size: 10px;
+    gap: 8px;
   }
+}
 
   .portrait-label {
     left: 18px;

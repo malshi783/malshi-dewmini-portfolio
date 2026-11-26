@@ -63,24 +63,26 @@ const projects = [
     route: '/projects/ai-al-studymate',
   },
 
-  {
-    number: '04',
-    title: 'Wave Mirissa OIMS',
-    projectType: 'Team Academic Project',
-    status: 'Near Completion',
-    description:
-      'A collaborative academic project featuring order management, inventory management and marketing capabilities for a handmade jewellery business.',
-    stack: [
-      'Team Project',
-      'Order Management',
-      'Inventory',
-      'Marketing',
-    ],
-    image:
-      '/projets%20screenshots/WaveMirissa/Screenshot%202026-11-22%20030931.png',
-    link: 'https://github.com/agentdynarq/wm-oims',
-    route: '/projects/wave-mirissa-oims',
-  },
+  
+    {
+  number: '04',
+  title: 'Wave Mirissa OIMS',
+  projectType: 'Team Academic Project',
+  status: 'In Progress',
+  description:
+    'A database-driven business management application for a Sri Lankan handmade jewellery business. My contribution focuses on coupon management, marketing campaigns, customer consent validation and PostgreSQL database operations.',
+  stack: [
+    'React',
+    'FastAPI',
+    'PostgreSQL',
+    'Stored Procedures',
+    'Database Triggers',
+  ],
+  image:
+    '/projets%20screenshots/WaveMirissa/Screenshot%202026-11-22%20030931.png',
+  link: 'https://github.com/agentdynarq/wm-oims',
+  route: '/projects/wave-mirissa-oims',
+},
 
   {
     number: '05',

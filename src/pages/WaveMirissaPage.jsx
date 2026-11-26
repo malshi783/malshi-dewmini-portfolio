@@ -15,7 +15,7 @@ const waveMirissaScreenshots = [
     src: '/projets%20screenshots/WaveMirissa/Screenshot%202026-11-22%20030931.png',
     alt: 'Wave Mirissa Order and Inventory Management System preview',
     description:
-      'A preview of the Wave Mirissa digital management solution developed as part of the academic team project.',
+      'A preview of the centralized order, inventory and marketing management application developed as part of an academic team project.',
   },
 ]
 
@@ -28,61 +28,77 @@ export function WaveMirissaPage() {
       <ProjectHero
         eyebrow="Academic Team Project"
         title="Wave Mirissa – Order and Inventory Management System"
-        subtitle="A Digital Management Solution for a Handmade Jewellery Business"
-        status="Near Completion"
+        subtitle="A Database-Driven Business Management Solution for a Sri Lankan Handmade Jewellery Business"
+        status="In Progress"
         repository="https://github.com/agentdynarq/wm-oims"
       />
 
       {/* PROJECT OVERVIEW */}
 
       <ProjectOverview
-        introduction="Wave Mirissa OIMS is an academic team project for a handmade jewellery business, intended to support digital order, inventory and marketing-related business operations."
+        introduction="Wave Mirissa Order and Inventory Management System (WM-OIMS) is a database-driven web application developed as an academic team project for a Sri Lankan handmade jewellery business. The system aims to centralize product, inventory, customer, order, payment, delivery and marketing operations that were previously managed through separate communication channels."
 
         objectives={[
-          'Support the management of customer orders.',
-          'Organise inventory information and product availability.',
-          'Explore marketing-related functionality.',
-          'Apply a collaborative software engineering approach.',
+          'Centralize customer order and product management.',
+          'Organize inventory records and monitor product availability.',
+          'Support payment and delivery management.',
+          'Provide coupon and promotional campaign management.',
+          'Manage customer marketing consent and email communication.',
+          'Support business reporting and operational insights.',
         ]}
 
-        implementation="The project combines order management, inventory management and marketing functionality to support the business operations of Wave Mirissa. It is being developed collaboratively as an academic team project."
+        implementation="The application follows a three-tier architecture using React and Vite for the frontend, Python FastAPI for backend APIs and PostgreSQL for data storage and business rules. My individual responsibility is the Coupons, Campaigns and Email Management module, where I work on frontend interfaces, backend APIs and PostgreSQL database functionality."
       />
 
       {/* TECHNOLOGY STACK */}
 
       <TechnologyStack
         items={[
-          'Team Project',
-          'Order Management',
-          'Inventory Management',
-          'Marketing',
+          'React',
+          'Vite',
+          'Tailwind CSS',
+          'Python',
+          'FastAPI',
+          'PostgreSQL',
+          'Git',
+          'GitHub',
         ]}
       />
 
       {/* KEY FEATURES */}
 
       <FeatureGrid
-        title="Project Features"
+        title="System Features"
         features={[
+          {
+            title: 'Product & Catalog Management',
+            description:
+              'Manage jewellery products, product categories and product information through a centralized application.',
+          },
           {
             title: 'Order Management',
             description:
-              'Support digital workflows associated with customer orders and business operations.',
+              'Support customer order recording and order-related business workflows.',
           },
           {
             title: 'Inventory Management',
             description:
-              'Organise product and inventory-related information for the jewellery business.',
+              'Maintain stock information and support inventory tracking and stock-related operations.',
           },
           {
-            title: 'Marketing Module',
+            title: 'Payment & Delivery',
             description:
-              'Include marketing-related functionality within the wider application.',
+              'Support payment verification and delivery information management.',
           },
           {
-            title: 'Team Collaboration',
+            title: 'Coupon Management',
             description:
-              'Develop the application collaboratively as part of an academic software engineering project.',
+              'Create and validate discount coupons with eligibility rules and redemption restrictions.',
+          },
+          {
+            title: 'Marketing Campaigns',
+            description:
+              'Organize promotional campaigns and select eligible customer segments for marketing communication.',
           },
         ]}
       />
@@ -98,30 +114,45 @@ export function WaveMirissaPage() {
         ]}
       />
 
-      {/* MY CONTRIBUTIONS */}
+      {/* MY INDIVIDUAL CONTRIBUTIONS */}
 
       <FeatureGrid
-        title="My Individual Contributions"
+        title="My Individual Contributions – Marketing Module"
         features={[
           {
-            title: 'Database Design',
+            title: 'Coupon Management',
             description:
-              'Contributed to designing the database structure for the application.',
+              'Developed coupon creation and management functionality through the marketing administration interface and backend APIs.',
           },
           {
-            title: 'Marketing Module',
+            title: 'Coupon Validation Function',
             description:
-              'Worked on the marketing-related functionality of the system.',
+              'Implemented a PostgreSQL function to validate coupon codes, check eligibility conditions and calculate discount amounts.',
           },
           {
-            title: 'Coupons and Campaigns',
+            title: 'Redemption Protection',
             description:
-              'Contributed to coupon and campaign management functionality.',
+              'Applied database constraints to prevent the same customer from redeeming the same coupon more than once.',
+          },
+          {
+            title: 'Campaign Management',
+            description:
+              'Developed campaign management functionality, including campaign creation and customer segmentation.',
+          },
+          {
+            title: 'Customer Consent Protection',
+            description:
+              'Implemented a PostgreSQL function and database trigger to ensure promotional emails are only queued for customers who have granted marketing consent.',
+          },
+          {
+            title: 'Campaign Queue Procedure',
+            description:
+              'Created a PostgreSQL stored procedure to identify eligible customer segments and queue campaign email records.',
           },
           {
             title: 'Email Outbox',
             description:
-              'Worked on the email outbox functionality within the project.',
+              'Developed an email outbox interface to view and filter queued, sent and failed email records.',
           },
         ]}
       />
@@ -131,29 +162,29 @@ export function WaveMirissaPage() {
       <LearningGrid
         learnings={[
           {
-            title: 'Team Software Development',
+            title: 'Advanced PostgreSQL',
             description:
-              'Collaborating within a shared academic application and repository.',
-          },
-          {
-            title: 'Business Process Analysis',
-            description:
-              'Understanding how order, inventory and marketing activities connect in a small business.',
+              'Gained practical experience implementing database functions, stored procedures, triggers and constraints.',
           },
           {
             title: 'Database Design',
             description:
-              'Developing practical understanding of database structure and application data relationships.',
+              'Applied relational database concepts, normalization and data integrity rules.',
           },
           {
-            title: 'Marketing Functionality',
+            title: 'Backend API Development',
             description:
-              'Understanding how marketing features can support business operations.',
+              'Worked with FastAPI endpoints to connect frontend functionality with database operations.',
           },
           {
-            title: 'Collaborative Delivery',
+            title: 'Business Rule Implementation',
             description:
-              'Planning and coordinating development activities across team-developed modules.',
+              'Implemented coupon eligibility, redemption restrictions and customer marketing consent rules.',
+          },
+          {
+            title: 'Team Collaboration',
+            description:
+              'Collaborated with team members using Git and GitHub to develop and integrate application modules.',
           },
         ]}
       />
