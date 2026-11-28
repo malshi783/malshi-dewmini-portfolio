@@ -102,8 +102,27 @@ const projects = [
     link: '',
     route: '/projects/metermind',
   },
-]
 
+{
+  number: '06',
+  title: 'Personal Portfolio Website',
+  projectType: 'Individual Project',
+  status: 'Completed',
+  description:
+    'A responsive personal portfolio website developed to showcase my technical skills, educational background, certifications, projects and software development journey.',
+  stack: [
+    'React.js',
+    'Vite',
+    'JavaScript',
+    'CSS',
+    'Framer Motion',
+    'React Router',
+  ],
+  image: '/projets%20screenshots/Portfolio/portfolio-preview.png',
+  link: 'https://github.com/malshi783/portfolio',
+  route: '/projects/personal-portfolio',
+},
+];
 export function Projects() {
   return (
     <section id="projects" className="section projects-section">

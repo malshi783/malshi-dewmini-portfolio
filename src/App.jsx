@@ -17,6 +17,7 @@ import { TestPilotPage } from './pages/TestPilotPage'
 import { StudyMatePage } from './pages/StudyMatePage'
 import { WaveMirissaPage } from './pages/WaveMirissaPage'
 import { MeterMindPage } from './pages/MeterMindPage'
+import { PersonalPortfolioPage } from './pages/PersonalPortfolioPage'
 
 function HomePage() {
   return (
@@ -76,7 +77,10 @@ export default function App() {
           path="/projects/metermind"
           element={<MeterMindPage />}
         />
-
+<Route
+  path="/projects/personal-portfolio"
+  element={<PersonalPortfolioPage />}
+/>
         <Route
           path="*"
           element={<HomePage />}
