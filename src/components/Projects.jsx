@@ -28,7 +28,7 @@ const projects = [
     number: '02',
     title: 'TestPilot-AI',
     projectType: 'Individual Project',
-    status: 'In Progress',
+    status: 'Completed',
     description:
       'A software quality engineering platform MVP under development, focusing on test management and AI-assisted quality engineering capabilities.',
     stack: [

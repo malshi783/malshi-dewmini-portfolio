@@ -58,7 +58,7 @@ export function TestPilotPage() {
         eyebrow="Software Quality Engineering Platform"
         title="TestPilot-AI"
         subtitle="Exploring AI-assisted workflows for software quality engineering."
-        status="In Progress"
+        status="Completed"
         repository="https://github.com/malshi783/TestPilot-AI"
       />
 
