@@ -392,6 +392,31 @@ img { display: block; max-width: 100%; }
   flex-wrap: wrap;
   gap: 9px;
 }
+/* Project Cards */
+.featured-project {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Project Details */
+.project-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+/* Push buttons to the bottom */
+.project-actions-full {
+  margin-top: auto;
+  width: 100%;
+}
+
+/* Make buttons equal width */
+.project-action-primary {
+  width: 100%;
+  text-align: center;
+}
 .technology-stack span {
   border: 1px solid var(--line);
   border-radius: 999px;
